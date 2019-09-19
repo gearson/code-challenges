@@ -35,13 +35,3 @@ def slice_and_dice(text):
 
 %timeit slice_and_dice(text)
 
-#%%
-import os
-
-entries = os.scandir('days/')
-list(entries)
-#%%
-with os.scandir('days/') as entries:
-    for entry in entries:
-        print(entry.name)
-
